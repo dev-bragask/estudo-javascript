@@ -97,7 +97,9 @@ Ao contrário das strings tradicionais em JavaScript, que são definidas com asp
 - Incremento  <br/>
     | x ++ (x+=)
     
-- identidade <br/>
+    `O operador de incremento é representado pelo símbolo ++ e é usado para adicionar 1 ao valor de uma variável. Existem duas formas de usar o operador de incremento: o operador pode ser colocado antes da variável ou depois da variável.`
+    
+- Identidade <br/>
     | 5 == 5 true <br/>
     | 5 == ‘5’ true <br/>
     | 5 === ‘5’ false  
@@ -105,5 +107,7 @@ Ao contrário das strings tradicionais em JavaScript, que são definidas com asp
     | 0 mesmo acontece com o !== 
     
 - Ternário <br/>
-    | Media >= 7 ? “aprovado” : “reprovado”
+    | Media >= 7 ? “aprovado” : “reprovado” <br/>
+    `O operador ternário é uma forma compacta de escrever uma estrutura condicional simples em uma única linha. Ele é representado pelo símbolo ? e : e possui a seguinte sintaxe:` <br/>
+    `condição ? valor se verdadeiro : valor se falso`
     
