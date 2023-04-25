@@ -111,3 +111,51 @@ Ao contrário das strings tradicionais em JavaScript, que são definidas com asp
     `O operador ternário é uma forma compacta de escrever uma estrutura condicional simples em uma única linha. Ele é representado pelo símbolo ? e : e possui a seguinte sintaxe:` <br/>
     `condição ? valor se verdadeiro : valor se falso`
     
+## **Condições**
+As condições são usadas para executar diferentes ações com base em diferentes condições. Existem duas maneiras de criar uma condição em JavaScript: usando a instrução if e a instrução switch.
+    
+    Condição simples = If(condição){ } 
+    Condição complexa = if(condição){ }else{ } 
+    Condição aninhadas = uma condição dentro da outra. (Else if)  
+    Condição múltiplas = valor fixo (switch(expressão){valor_break})
+    
+    exemplo :
+    let idade = 18;
+
+    if (idade >= 18) {
+      console.log("Você é maior de idade.");
+    } else {
+      console.log("Você é menor de idade.");
+    }
+    
+Neste exemplo, estamos verificando se a variável idade é maior ou igual a 18. Se for verdadeira, o código dentro do bloco if será executado, caso contrário, o código dentro do bloco else será executado. No caso, como a variável idade é igual a 18, o código dentro do bloco if será executado e a mensagem "Você é maior de idade." será impressa no console.
+
+
+## **Repetições**
+
+As repetições em JavaScript são usadas para executar um bloco de código várias vezes. Existem duas maneiras principais de criar uma repetição em JavaScript: usando a instrução `for` e a instrução `while`.
+
+A instrução `for` é usada para executar um bloco de código um número específico de vezes. A instrução `while` é usada para executar um bloco de código enquanto uma condição específica for verdadeira.
+
+    while(condição){ }
+    do{ }while(condição)
+    for(incio;testeLogico;incremento;){ }
+    for(variável in Array){ }
+    
+    exemplos: 
+    
+    for (let i = 1; i <= 5; i++) {
+      console.log(i);
+    }
+    
+    let j = 0;
+    while (j <= 10) {
+      console.log(j);
+      j += 2;
+    }
+    
+    
+No primeiro exemplo, estamos usando a instrução for para imprimir os números de 1 a 5. A variável i é inicializada como 1, e o bloco de código dentro do for é executado enquanto i for menor ou igual a 5. A cada iteração, a variável i é incrementada em 1, e o número correspondente é impresso no console.
+
+No segundo exemplo, estamos usando a instrução while para imprimir os números pares de 0 a 10. A variável j é inicializada como 0, e o bloco de código dentro do while é executado enquanto j for menor ou igual a 10. A cada iteração, a variável j é incrementada em 2 (para imprimir apenas números pares), e o número correspondente é impresso no console.
+    
