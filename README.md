@@ -194,4 +194,4 @@ As funções são blocos de código que podem ser definidos e reutilizados para 
 
     nomeDaFuncao(argumento1, argumento2); = chamada da função
 
-sses são apenas alguns conceitos básicos sobre funções em JavaScript. As funções têm uma ampla variedade de recursos e podem ser usadas de várias maneiras para manipular dados, executar tarefas e interagir com outros elementos do código. Elas são uma parte fundamental da linguagem JavaScript.
+Esses são apenas alguns conceitos básicos sobre funções em JavaScript. As funções têm uma ampla variedade de recursos e podem ser usadas de várias maneiras para manipular dados, executar tarefas e interagir com outros elementos do código. Elas são uma parte fundamental da linguagem JavaScript.
