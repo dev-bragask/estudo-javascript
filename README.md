@@ -183,3 +183,15 @@ Um array é uma estrutura de dados que armazena múltiplos valores em uma única
     num.sort() = coloca os valores do array em ordem crescente
     num.indexOf(2) = procura no array um determinado valor valor
     A saída será: 7
+    
+## **Funções**
+
+As funções são blocos de código que podem ser definidos e reutilizados para executar uma tarefa específica. Elas ajudam a organizar e modularizar o código, tornando-o mais legível e fácil de manter. Aqui estão algumas características e exemplos de como trabalhar com funções em JavaScript:
+
+    function nomeDaFuncao(parametro1, parametro2) {
+      // Bloco de código da função
+    }
+
+    nomeDaFuncao(argumento1, argumento2); = chamada da função
+
+sses são apenas alguns conceitos básicos sobre funções em JavaScript. As funções têm uma ampla variedade de recursos e podem ser usadas de várias maneiras para manipular dados, executar tarefas e interagir com outros elementos do código. Elas são uma parte fundamental da linguagem JavaScript.
