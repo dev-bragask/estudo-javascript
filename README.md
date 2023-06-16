@@ -158,4 +158,28 @@ A instrução `for` é usada para executar um bloco de código um número espec�
 No primeiro exemplo, estamos usando a instrução for para imprimir os números de 1 a 5. A variável i é inicializada como 1, e o bloco de código dentro do for é executado enquanto i for menor ou igual a 5. A cada iteração, a variável i é incrementada em 1, e o número correspondente é impresso no console.
 
 No segundo exemplo, estamos usando a instrução while para imprimir os números pares de 0 a 10. A variável j é inicializada como 0, e o bloco de código dentro do while é executado enquanto j for menor ou igual a 10. A cada iteração, a variável j é incrementada em 2 (para imprimir apenas números pares), e o número correspondente é impresso no console.
-    
+
+## **Array**
+
+Um array é uma estrutura de dados que armazena múltiplos valores em uma única variável. Ele é uma forma de agrupar dados relacionados. Veja como trabalhar com arrays em JavaScript:
+
+    const array = []; // Array vazio
+    const numeros = [1, 2, 3, 4, 5]; // Array com valores
+    const frutas = ['maçã', 'banana', 'laranja']; // Array de strings
+
+    let num = [0,1]
+    num[2]=6
+    A saída será: [0, 1, 6]
+    Agora o array num possui três elementos, sendo 0 no índice 0, 1 no índice 1 e 6 no índice 2.
+
+    num.push(7) = adiciona um novo elemento ao final do array, expandindo-o automaticamente. 
+    No caso acima, o número 7 é adicionado como o último elemento do array num.
+    A saída será: [0, 1, 7]
+  
+    num.length = tamanho do array  
+    console.log(num.length);
+    A saída será: '3'
+
+    num.sort() = coloca os valores do array em ordem crescente
+    num.indexOf(2) = procura no array um determinado valor valor
+    A saída será: 7
