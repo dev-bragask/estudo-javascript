@@ -113,6 +113,7 @@ Ao contrário das strings tradicionais em JavaScript, que são definidas com asp
     
 - Ternário <br/>
     | Media >= 7 ? “aprovado” : “reprovado” <br/>
+
     O operador ternário é uma forma compacta de escrever uma estrutura condicional simples em uma única linha. Ele é representado pelo símbolo ? e : e possui a seguinte sintaxe:` <br/>
     condição ? valor se verdadeiro : valor se falso
     
@@ -211,42 +212,42 @@ Quando uma página da web é carregada em um navegador, o navegador cria uma rep
 Com o DOM, é possível acessar e modificar elementos individuais, adicionar ou remover elementos, alterar atributos e estilos, além de lidar com eventos, como cliques e submissões de formulários. O DOM fornece uma maneira poderosa e flexível de interagir com os elementos de uma página da web e criar experiências interativas e dinâmicas para os usuários.
 
 
-- **Acessndo elemento que retornam um HTMLCollection de elementos com base no nome da tag fornecido.**
+## **Acessando elementos usando seletores.**
 
 Em JavaScript, existem vários métodos que retornam um HTMLCollection de elementos com base no nome da tag fornecido. Esses métodos permitem selecionar elementos específicos do documento com base em sua tag HTML. Aqui estão alguns dos principais métodos:
 
-1- **querySelector():** O método é uma poderosa função do DOM que permite selecionar elementos com base em um seletor CSS especificado. Ele retorna o primeiro elemento que corresponde ao seletor fornecido.
+**1- querySelector():** O método é uma poderosa função do DOM que permite selecionar elementos com base em um seletor CSS especificado. Ele retorna o primeiro elemento que corresponde ao seletor fornecido.
 
     const elemento = document.querySelector('.classe-do-elemento');
     
 Nesse exemplo, o método procura pelo primeiro elemento que possui a classe CSS "classe-do-elemento" e retorna esse elemento. Se nenhum elemento for encontrado, o valor retornado será null.
 
-2- **querySelectorAll():** Este método retorna uma NodeList de elementos que correspondem a um seletor CSS especificado. Você pode passar o nome da tag como seletor para selecionar todos os elementos correspondentes a essa tag. Por exemplo:
+**2- querySelectorAll():** Este método retorna uma NodeList de elementos que correspondem a um seletor CSS especificado. Você pode passar o nome da tag como seletor para selecionar todos os elementos correspondentes a essa tag. Por exemplo:
 
     const elementos = document.querySelectorAll('div');
         
 Isso retornará uma NodeList com todos os elementos `<div>` encontrados no documento.
 
-3- **getElementsByName():** O método retorna uma NodeList de elementos com o atributo `name` especificado. No entanto, é importante observar que esse método funciona apenas para certos elementos específicos, como `input`, `select` e `textarea`. Por exemplo: 
+**3- getElementsByName():** O método retorna uma NodeList de elementos com o atributo `name` especificado. No entanto, é importante observar que esse método funciona apenas para certos elementos específicos, como `input`, `select` e `textarea`. Por exemplo: 
 
     const elementos = document.getElementsByName('nome-do-elemento');
 
 Isso retornará uma NodeList contendo todos os elementos com o atributo `name` igual a "nome-do-elemento".
 
 
-4- **getElementsByTagName():** Esse método retorna uma HTMLCollection de elementos com o nome da tag especificada. Ele permite selecionar elementos por seu nome de tag diretamente. Por exemplo:
+**4- getElementsByTagName():** Esse método retorna uma HTMLCollection de elementos com o nome da tag especificada. Ele permite selecionar elementos por seu nome de tag diretamente. Por exemplo:
 
     const elementos = document.getElementsByTagName('div');
 
 Isso retornará uma HTMLCollection com todos os elementos `<div>` encontrados no documento.
 
-5- **getElementsByClassName():** Este método retorna uma HTMLCollection de elementos com a classe CSS especificada. Embora não se baseie diretamente no nome da tag, ele pode ser usado para selecionar elementos com base em uma classe comum. Por exemplo:
+**5- getElementsByClassName():** Este método retorna uma HTMLCollection de elementos com a classe CSS especificada. Embora não se baseie diretamente no nome da tag, ele pode ser usado para selecionar elementos com base em uma classe comum. Por exemplo:
 
     const elementos = document.getElementsByClassName('minha-classe');
 
 Isso retornará uma HTMLCollection com todos os elementos que possuem a classe CSS "minha-classe".
 
-6- **getElementById():** O método é usado para retornar um elemento do DOM com base no valor do atributo id fornecido. Ao contrário dos métodos mencionados anteriormente, getElementById() retorna apenas um único elemento em vez de uma coleção.
+**6- getElementById():** O método é usado para retornar um elemento do DOM com base no valor do atributo id fornecido. Ao contrário dos métodos mencionados anteriormente, getElementById() retorna apenas um único elemento em vez de uma coleção.
 
     const elemento = document.getElementById('meu-elemento');
     
@@ -254,7 +255,7 @@ Nesse exemplo, o método procura por um elemento com o atributo id igual a "meu-
 
 Esses métodos são úteis quando você deseja selecionar elementos específicos do documento com base em seu nome de tag. É importante observar que tanto `querySelectorAll()` quanto `getElementsByTagName()` retornam coleções estáticas, o que significa que, se elementos adicionais forem adicionados ao documento posteriormente, eles não serão automaticamente incluídos na coleção. Se você precisar lidar com uma coleção dinâmica que inclua novos elementos, é necessário atualizar a coleção manualmente.
 
-- **Eventos DOM**
+## **Eventos DOM**
 
 Eventos no DOM (Document Object Model) são ações ou ocorrências que acontecem em elementos HTML e desencadeiam a execução de código JavaScript. Eles permitem que os desenvolvedores respondam a interações do usuário, como cliques em botões, digitação em campos de formulário, movimentos do mouse, entre outros.
 
