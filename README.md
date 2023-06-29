@@ -1,5 +1,5 @@
 # Estudo-JavaScript
-Estudo básico sobre JavaScript, armazenamento de dados, operadores, DOM, funções, condições, repetições e array.
+Estudo básico sobre JavaScript. Contem os seguintes tópicos: armazenamento de dados, variáveis, operadores, condições, repetições, array, funções e DOM .
 
 ## O que é JavaScript?
 JavaScript é uma linguagem de programação utilizada para criar interatividade em páginas da web. Ela permite que os desenvolvedores criem aplicativos e sites mais dinâmicos, com recursos como animações, validação de formulários, efeitos visuais, jogos e muito mais.
@@ -49,7 +49,6 @@ Em JavaScript, as variáveis podem ser declaradas usando as palavras-chave var, 
 - Template strings
 
 Ao contrário das strings tradicionais em JavaScript, que são definidas com aspas simples ou duplas, as template strings são definidas com backticks (``). Isso permite a inclusão de variáveis e expressões dentro da string usando a sintaxe ${ } dentro das backticks.
-
 
 
 ## **Operadores**
@@ -195,3 +194,78 @@ As funções são blocos de código que podem ser definidos e reutilizados para 
     nomeDaFuncao(argumento1, argumento2); = chamada da função
 
 Esses são apenas alguns conceitos básicos sobre funções em JavaScript. As funções têm uma ampla variedade de recursos e podem ser usadas de várias maneiras para manipular dados, executar tarefas e interagir com outros elementos do código. Elas são uma parte fundamental da linguagem JavaScript.
+
+
+## **DOM = Document Object Model (Modelo de Objeto de Documento)**
+
+É uma interface de programação em JavaScript que representa a estrutura do documento HTML ou XML em forma de uma árvore de objetos. O DOM permite que os programadores acessem e manipulem os elementos e conteúdos de um documento web de forma dinâmica.
+
+Quando uma página da web é carregada em um navegador, o navegador cria uma representação interna do documento usando o DOM. Essa representação é organizada hierarquicamente, onde cada elemento do documento (como tags HTML) é representado por um objeto. Esses objetos podem ser manipulados e atualizados usando JavaScript para alterar dinamicamente o conteúdo, a aparência e o comportamento da página.
+
+Com o DOM, é possível acessar e modificar elementos individuais, adicionar ou remover elementos, alterar atributos e estilos, além de lidar com eventos, como cliques e submissões de formulários. O DOM fornece uma maneira poderosa e flexível de interagir com os elementos de uma página da web e criar experiências interativas e dinâmicas para os usuários.
+
+
+- **Acessndo elemento que retornam um HTMLCollection de elementos com base no nome da tag fornecido.**
+
+Em JavaScript, existem vários métodos que retornam um HTMLCollection de elementos com base no nome da tag fornecido. Esses métodos permitem selecionar elementos específicos do documento com base em sua tag HTML. Aqui estão alguns dos principais métodos:
+
+1- **querySelector()**: O método é uma poderosa função do DOM que permite selecionar elementos com base em um seletor CSS especificado. Ele retorna o primeiro elemento que corresponde ao seletor fornecido.
+
+    const elemento = document.querySelector('.classe-do-elemento');
+    
+Nesse exemplo, o método procura pelo primeiro elemento que possui a classe CSS "classe-do-elemento" e retorna esse elemento. Se nenhum elemento for encontrado, o valor retornado será null.
+
+2- **querySelectorAll()**: Este método retorna uma NodeList de elementos que correspondem a um seletor CSS especificado. Você pode passar o nome da tag como seletor para selecionar todos os elementos correspondentes a essa tag. Por exemplo:
+
+    const elementos = document.querySelectorAll('div');
+        
+Isso retornará uma NodeList com todos os elementos `<div>` encontrados no documento.
+
+3- **getElementsByName()**: O método retorna uma NodeList de elementos com o atributo `name` especificado. No entanto, é importante observar que esse método funciona apenas para certos elementos específicos, como `input`, `select` e `textarea`. Por exemplo: 
+
+    const elementos = document.getElementsByName('nome-do-elemento');
+
+Isso retornará uma NodeList contendo todos os elementos com o atributo `name` igual a "nome-do-elemento".
+
+
+4- **getElementsByTagName()**: Esse método retorna uma HTMLCollection de elementos com o nome da tag especificada. Ele permite selecionar elementos por seu nome de tag diretamente. Por exemplo:
+
+    const elementos = document.getElementsByTagName('div');
+
+Isso retornará uma HTMLCollection com todos os elementos `<div>` encontrados no documento.
+
+5- **getElementsByClassName()**: Este método retorna uma HTMLCollection de elementos com a classe CSS especificada. Embora não se baseie diretamente no nome da tag, ele pode ser usado para selecionar elementos com base em uma classe comum. Por exemplo:
+
+    const elementos = document.getElementsByClassName('minha-classe');
+
+Isso retornará uma HTMLCollection com todos os elementos que possuem a classe CSS "minha-classe".
+
+6- **getElementById()**: O método é usado para retornar um elemento do DOM com base no valor do atributo id fornecido. Ao contrário dos métodos mencionados anteriormente, getElementById() retorna apenas um único elemento em vez de uma coleção.
+
+    const elemento = document.getElementById('meu-elemento');
+    
+Nesse exemplo, o método getElementById() procura por um elemento com o atributo id igual a "meu-elemento" e retorna esse elemento. Se nenhum elemento for encontrado com o id especificado, o valor retornado será null.
+
+Esses métodos são úteis quando você deseja selecionar elementos específicos do documento com base em seu nome de tag. É importante observar que tanto querySelectorAll() quanto getElementsByTagName() retornam coleções estáticas, o que significa que, se elementos adicionais forem adicionados ao documento posteriormente, eles não serão automaticamente incluídos na coleção. Se você precisar lidar com uma coleção dinâmica que inclua novos elementos, é necessário atualizar a coleção manualmente.
+
+- **Eventos DOM**
+
+Eventos no DOM (Document Object Model) são ações ou ocorrências que acontecem em elementos HTML e desencadeiam a execução de código JavaScript. Eles permitem que os desenvolvedores respondam a interações do usuário, como cliques em botões, digitação em campos de formulário, movimentos do mouse, entre outros.
+
+Quando um evento ocorre em um elemento HTML, o navegador dispara o evento e pode executar uma função JavaScript associada a ele, conhecida como manipulador de eventos. Os manipuladores de eventos são responsáveis por definir o comportamento que deve ocorrer quando o evento é acionado.
+
+Existem muitos tipos de eventos DOM disponíveis, como:
+
+Eventos de mouse: ocorrem quando o usuário interage com o mouse, como click, mouseover, mouseout, etc.
+
+Eventos de teclado: ocorrem quando o usuário interage com o teclado, como keydown, keyup, etc.
+
+Eventos de formulário: ocorrem quando o usuário interage com elementos de formulário, como submit, change, etc.
+
+Eventos de foco: ocorrem quando um elemento ganha ou perde o foco, como focus, blur, etc.
+
+Eventos de carregamento: ocorrem quando a página ou um recurso é carregado, como load, DOMContentLoaded, etc.
+
+Para associar um manipulador de eventos a um elemento HTML, você pode usar métodos como addEventListener, onde especifica o tipo de evento e a função a ser executada quando o evento ocorrer. O manipulador de eventos recebe um objeto de evento como argumento, que fornece informações sobre o evento e o elemento associado.
+
+Os eventos no DOM desempenham um papel fundamental na criação de interatividade em páginas da web, permitindo que os desenvolvedores respondam e ajam com base nas ações dos usuários, tornando as aplicações mais dinâmicas e responsivas.
