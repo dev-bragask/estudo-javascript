@@ -1,5 +1,17 @@
-# Estudo-JavaScript
-Estudo básico sobre JavaScript. Contem os seguintes tópicos: armazenamento de dados, variáveis, operadores, condições, repetições, array, funções e DOM .
+<h1 align="center">
+    <strong>Estudo-JavaScript</strong>
+</h1>
+Estudo básico sobre JavaScript. Contem os seguintes tópicos:
+<p align="center">
+    <a href="##-Armazenamento-de-dados">Armazenamento de dados</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="##-Variáveis">Variáveis</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="##-Operadores">Operadores</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="##-Condições">Condições</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="##-repetições">Repetições</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="##-array">Array</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="##-funções">Funções</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="##-dom--document-object-model-modelo-de-objeto-de-documento">DOM</a>
+</p>
 
 ## O que é JavaScript?
 JavaScript é uma linguagem de programação utilizada para criar interatividade em páginas da web. Ela permite que os desenvolvedores criem aplicativos e sites mais dinâmicos, com recursos como animações, validação de formulários, efeitos visuais, jogos e muito mais.
@@ -44,17 +56,17 @@ Uma `"string"` (cadeia de caracteres) é usada para armazenar texto, como nomes,
     
         .toLocaleString('pt-BR' ,{style: 'currency' , currency: 'BRL'})
     
-## **Variável**
+## **Variáveis**
 
 Variáveis em JavaScript são usadas para armazenar dados e informações em um programa. Uma variável é um nome simbólico que faz referência a um valor armazenado na memória do computador.
 
-Em JavaScript, as variáveis podem ser declaradas usando as palavras-chave var, let ou const. A diferença entre essas palavras-chave é a forma como as variáveis são declaradas e como elas podem ser usadas posteriormente.
+Em JavaScript, as variáveis podem ser declaradas usando as palavras-chave `var`, `let` ou `const`. A diferença entre essas palavras-chave é a forma como as variáveis são declaradas e como elas podem ser usadas posteriormente.
 
 É importante lembrar que as variáveis declaradas com const não podem ter seu valor atualizado posteriormente. Já as variáveis declaradas com let e var podem ser atualizadas posteriormente, mas com algumas diferenças importantes no escopo. Variáveis declaradas com let têm escopo de bloco, enquanto as variáveis declaradas com var têm escopo de função ou global.
 
 - **Template strings**
 
-Ao contrário das strings tradicionais em JavaScript, que são definidas com aspas simples ou duplas, as template strings são definidas com backticks (``). Isso permite a inclusão de variáveis e expressões dentro da string usando a sintaxe ${ } dentro das backticks.
+Ao contrário das strings tradicionais em JavaScript, que são definidas com aspas simples ou duplas, as template strings são definidas com backticks `(``)`. Isso permite a inclusão de variáveis e expressões dentro da string usando a sintaxe `${ }` dentro das backticks.
 
 
 ## **Operadores**
@@ -102,7 +114,7 @@ Ao contrário das strings tradicionais em JavaScript, que são definidas com asp
 - Incremento  <br/>
     | x ++ (x+=)
     
-    O operador de incremento é representado pelo símbolo ++ e é usado para adicionar 1 ao valor de uma variável. Existem duas formas de usar o operador de incremento: o operador pode ser colocado antes da variável ou depois da variável.
+    O operador de incremento é representado pelo símbolo `++` e é usado para adicionar `1` ao valor de uma variável. Existem duas formas de usar o operador de incremento: o operador pode ser colocado antes da variável ou depois da variável.
     
 - Identidade <br/>
     | 5 == 5 true <br/>
@@ -114,25 +126,27 @@ Ao contrário das strings tradicionais em JavaScript, que são definidas com asp
 - Ternário <br/>
     | Media >= 7 ? “aprovado” : “reprovado” <br/>
 
-    O operador ternário é uma forma compacta de escrever uma estrutura condicional simples em uma única linha. Ele é representado pelo símbolo ? e : e possui a seguinte sintaxe:` <br/>
-    condição ? valor se verdadeiro : valor se falso
+    O operador ternário é uma forma compacta de escrever uma estrutura condicional simples em uma única linha. Ele é representado pelo símbolo `?` e `:` e possui a seguinte sintaxe: <br/>
+        
+        condição ? valor se verdadeiro : valor se falso
     
 ## **Condições**
-As condições são usadas para executar diferentes ações com base em diferentes condições. Existem duas maneiras de criar uma condição em JavaScript: usando a instrução if e a instrução switch.
+As condições são usadas para executar diferentes ações com base em diferentes condições. Existem duas maneiras de criar uma condição em JavaScript: usando a instrução `if` e a instrução `switch`.
     
-    Condição simples = If(condição){ } 
-    Condição complexa = if(condição){ }else{ } 
-    Condição aninhadas = uma condição dentro da outra. (Else if)  
-    Condição múltiplas = valor fixo (switch(expressão){valor_break})
-    
-    exemplo :
-    let idade = 18;
+- Condição simples = If(condição){ } 
+- Condição complexa = if(condição){ }else{ } 
+- Condição aninhadas = uma condição dentro da outra. (Else if)  
+- Condição múltiplas = valor fixo (switch(expressão){valor_break})
 
-    if (idade >= 18) {
-      console.log("Você é maior de idade.");
-    } else {
-      console.log("Você é menor de idade.");
-    }
+exemplo :
+
+        let idade = 18;
+
+        if (idade >= 18) {
+        console.log("Você é maior de idade.");
+        } else {
+        console.log("Você é menor de idade.");
+        }
     
 Neste exemplo, estamos verificando se a variável idade é maior ou igual a `18`. Se for verdadeira, o código dentro do bloco if será executado, caso contrário, o código dentro do bloco else será executado. No caso, como a variável idade é igual a `18`, o código dentro do bloco if será executado e a mensagem "Você é maior de idade." será impressa no console.
 
@@ -143,12 +157,12 @@ As repetições em JavaScript são usadas para executar um bloco de código vár
 
 A instrução `for` é usada para executar um bloco de código um número específico de vezes. A instrução `while` é usada para executar um bloco de código enquanto uma condição específica for verdadeira.
 
-    while(condição){ }
-    do{ }while(condição)
-    for(incio;testeLogico;incremento;){ }
-    for(variável in Array){ }
+- while(condição){ }
+- do{ }while(condição)
+- for(incio;testeLogico;incremento;){ }
+- for(variável in Array){ }
     
-    exemplos: 
+exemplos: 
     
     for (let i = 1; i <= 5; i++) {
       console.log(i);
