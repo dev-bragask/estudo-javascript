@@ -2,15 +2,15 @@
     <strong>Estudo-JavaScript</strong>
 </h1>
 Estudo básico sobre JavaScript. Contem os seguintes tópicos:
-<p align="center">
-    <a href="##-Armazenamento-de-dados">Armazenamento de dados</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="##-Variáveis">Variáveis</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="##-Operadores">Operadores</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="##-Condições">Condições</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="##-repetições">Repetições</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="##-array">Array</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="##-funções">Funções</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="##-dom--document-object-model-modelo-de-objeto-de-documento">DOM</a>
+<p align="left">
+    <a href="#armazenamento-de-dados">Armazenamento de dados</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="#variáveis">Variáveis</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="#operadores">Operadores</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="#condições">Condições</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="#repetições">Repetições</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="#array">Array</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="#funções">Funções</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="#dom--document-object-model-modelo-de-objeto-de-documento">DOM</a>
 </p>
 
 ## O que é JavaScript?
@@ -19,7 +19,7 @@ JavaScript é uma linguagem de programação utilizada para criar interatividade
 Originalmente criada em 1995 pela Netscape, hoje em dia, o JavaScript é amplamente utilizado em todo o mundo em desenvolvimento web, e é suportado por todos os principais navegadores, incluindo o Google Chrome, Firefox, Safari e Internet Explorer. Ele é uma linguagem de programação orientada a objetos, com recursos como variáveis, funções, loops e condicionais, e também tem suporte para manipulação de eventos, AJAX e APIs. Com o JavaScript, é possível criar aplicações tanto do lado do cliente quanto do lado do servidor, utilizando plataformas como Node.js.
 
 
-## **Armazenamento Dados**
+## **Armazenamento de Dados**
 Em JavaScript, `"number"` e `"string"` são tipos de dados fundamentais que são usados para armazenar diferentes tipos de informações.
 
 Um `"number"` (número) é usado para armazenar valores numéricos, como inteiros e números de ponto flutuante. Esses valores podem ser usados em operações matemáticas, como adição, subtração, multiplicação e divisão. Por exemplo: 
