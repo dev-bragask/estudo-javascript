@@ -4,6 +4,7 @@
 Bem-vindo ao meu incrível estudo de JavaScript! Aqui, vamos mergulhar em alguns conceitos fundamentais desta linguagem poderosa que transformou a web em um lugar interativo e dinâmico. Prepare-se para explorar os tópicos a seguir e dominar as habilidades necessárias para criar aplicações e sites incríveis:
 
 <br/>
+<br/>
 
 <p align="center">
     <a href="#armazenamento-de-dados">📂 Armazenamento de dados</a>&nbsp;&nbsp;|&nbsp;&nbsp;
