@@ -4,23 +4,24 @@
 Bem-vindo ao meu incrível estudo de JavaScript! Aqui, vamos mergulhar em alguns conceitos fundamentais desta linguagem poderosa que transformou a web em um lugar interativo e dinâmico. Prepare-se para explorar os tópicos a seguir e dominar as habilidades necessárias para criar aplicações e sites incríveis:
 
 <br/>
+
 <p align="center">
-    <a href="#📂-armazenamento-de-dados">📂 Armazenamento de dados</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="#🔢-variáveis">🔢 Variáveis</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="#⚙️-operadores">⚙️ Operadores</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="#🚦-condições">🚦 Condições</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="#🔄-repetições">🔄 Repetições</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="#🗃️-array">🗃️ Array</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="#🎯-funções">🎯 Funções</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="#📃-dom---document-object-model">📃 DOM</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="#🚀-agredimentos">🚀 Agradecimentos</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="#armazenamento-de-dados">📂 Armazenamento de dados</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="#variáveis">🔢 Variáveis</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="#operadores">⚙️ Operadores</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="#condições">🚦 Condições</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="#repetições">🔄 Repetições</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="#array">🗃️ Array</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="#funções">🎯 Funções</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="#dom---document-object-model">📃 DOM</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="#agredimentos">🚀 Agradecimentos</a>&nbsp;&nbsp;|&nbsp;&nbsp;
 </p>
 
 ## **🌈 O que é JavaScript?**
 JavaScript é a linguagem de programação que deu vida à web! Criada em 1995 pela Netscape, ela se tornou uma das linguagens mais populares para desenvolvimento web, permitindo que os desenvolvedores criem páginas e aplicativos interativos. Com JavaScript, você pode criar animações incríveis, validar formulários, criar efeitos visuais impressionantes e até mesmo desenvolver jogos emocionantes!
 
 Ao longo dos anos, o JavaScript evoluiu e é amplamente suportado em todos os principais navegadores, incluindo o Chrome, Firefox, Safari e Internet Explorer. Além disso, é uma linguagem orientada a objetos, com recursos poderosos, como variáveis, funções, loops e condicionais. Você também pode usá-la para criar aplicações tanto do lado do cliente, rodando no navegador, quanto do lado do servidor, utilizando plataformas como o Node.js.
-## **📂 Armazenamento de Dados**
+## **Armazenamento de Dados**
 Em JavaScript, temos dois tipos de dados fundamentais para armazenar informações: `"number"` e `"string"`.
 
 O tipo `"number"` é utilizado para armazenar valores numéricos, como inteiros e números de ponto flutuante. Eles são a base para operações matemáticas, como adição, subtração, multiplicação e divisão. Veja um exemplo: 
@@ -63,7 +64,7 @@ A função `String()` é responsável por converter um valor em uma string, caso
         // Resultado: "R$ 2.000,00"
 
 Com esses métodos, você poderá manipular números e textos de forma mais precisa e adequada ao contexto de sua aplicação. Mantenha-se sempre explorando as diversas possibilidades do JavaScript para criar experiências incríveis em seus projetos!
-## **🔢 Variáveis**
+## **Variáveis**
 As variáveis são fundamentais em JavaScript, pois permitem armazenar dados e informações em nosso programa. Elas são como caixas que guardam valores para serem utilizados posteriormente. Em JavaScript, podemos declarar variáveis usando as palavras-chave `var`, `let` ou `const`. A diferença entre elas está na forma como são declaradas e como se comportam em relação ao escopo.
 
 - `var:` Era a forma antiga de declarar variáveis, mas hoje em dia é menos utilizada. Variáveis declaradas com var têm escopo de função ou global, o que pode levar a alguns problemas devido a um fenômeno chamado "hoisting", onde as declarações são movidas para o topo de sua função ou escopo.
@@ -82,7 +83,7 @@ Exemplo de uso de `let` e template strings:
     console.log(`Olá, meu nome é ${nome} e tenho ${idade} anos.`);
 
 Neste exemplo, usamos uma template string para criar uma mensagem com os valores das variáveis `nome` e `idade`. O resultado será: "Olá, meu nome é Nícolas e tenho `18` anos."
-## **⚙️ Operadores**
+## **Operadores** 
 ### **Operadores Aritméticos 🧮**
 Os operadores aritméticos são utilizados para realizar operações matemáticas em JavaScript. Eles nos permitem fazer cálculos e manipular números. Alguns exemplos com suas respectivas operações:
 
@@ -179,7 +180,7 @@ Exemplo:
     const media = 8;
     const resultado = media >= 7 ? "aprovado" : "reprovado";
     // Resultado: "aprovado" se a média for maior ou igual a 7, caso contrário "reprovado"
-## **🚦 Condições**
+## **Condições**
 As condições são ferramentas poderosas que nos permitem tomar decisões em nosso código com base em diferentes situações. Em JavaScript, temos duas maneiras principais de criar condições: usando a instrução `if` e a instrução `switch`.
 
 ### **Instrução if 🤔**
@@ -246,7 +247,7 @@ Exemplo de condição múltipla com `switch `:
     console.log(mensagem);
 
 Neste exemplo, usamos a variável `diaSemana` para definir diferentes mensagens com base no valor dela. Se `diaSemana` for `4`, o código dentro do caso `4` será executado, e a mensagem "Hoje é quinta-feira. 🚀" será impressa no console.
-## **🔄 Repetições**
+## **Repetições**
 As repetições, também conhecidas como loops, são fundamentais para executar um bloco de código várias vezes. Em JavaScript, temos duas formas principais de criar repetições: usando a instrução `for` e a instrução `while`.
 ### **Instrução for 🚀**
 A instrução `for` é utilizada quando sabemos exatamente quantas vezes queremos executar um bloco de código.
@@ -270,7 +271,7 @@ Exemplo de repetição com `while`:
     }
 
 Neste exemplo, estamos usando a instrução `while` para imprimir os números pares de `0` a `10`. A variável `j` é inicializada como `0`, e o bloco de código dentro do `while` é executado enquanto `j` for menor ou igual a `10`. A cada iteração, a variável `j` é incrementada em `2` (para imprimir apenas números pares), e o número correspondente é impresso no console.
-## **🗃️ Array**
+## **Array**
 O array é como uma caixa mágica que nos permite armazenar diversos valores em uma única variável. Com ele, podemos agrupar dados relacionados e acessá-los de forma organizada. O array é uma estrutura de dados muito poderosa e amplamente utilizada em JavaScript.
 
 Exemplo de uso de arrays:
@@ -311,7 +312,7 @@ Para localizar a posição de um valor específico no array, podemos utilizar o 
     const posicao = num.indexOf(2); // Procura o valor 2 no array num
 
 A variável `posicao` receberá o valor `1`, pois o número `2` está na segunda posição do array `num`. Caso o valor não seja encontrado, o método `indexOf()` retorna `-1`.
-## **🎯 Funções**
+## **Funções**
 As funções são blocos de código que podem ser definidos e reutilizados para executar uma tarefa específica. Elas funcionam como pequenos ajudantes que nos auxiliam a organizar e modularizar o código, tornando-o mais legível e fácil de manter. Vamos entender melhor:
 
     function nomeDaFuncao(parametro1, parametro2) {
@@ -327,7 +328,7 @@ Na definição acima, temos uma função chamada `nomeDaFuncao` que recebe dois 
 Neste exemplo, estamos chamando a função `nomeDaFuncao` e passando os valores `argumento1` e `argumento2` como argumentos. Esses valores serão atribuídos aos parâmetros `parametro1` e `parametro2` dentro do bloco de código da função.
 
 As funções têm uma ampla variedade de recursos e podem ser usadas de várias maneiras para manipular dados, executar tarefas e interagir com outros elementos do código. Elas são uma parte fundamental da linguagem JavaScript e nos permitem criar código mais organizado e reutilizável. As possibilidades são infinitas!
-## **📃 DOM - Document Object Model**
+## **DOM - Document Object Model**
 O DOM (Document Object Model) é como um mapa detalhado de um documento HTML ou XML representado como uma árvore de objetos. Ele permite que os programadores acessem e manipulem os elementos e conteúdos de um documento web de forma dinâmica.
 
 Imagine que você está olhando para um quadro-negro onde alguém desenhou a estrutura de uma página da web. O DOM é a ferramenta que nos permite interagir com esse quadro-negro e modificar seu conteúdo, aparência e comportamento.
@@ -410,7 +411,7 @@ No exemplo acima, criamos um manipulador de eventos para o botão mágico. Quand
 
 Os eventos no DOM são a chave para criar páginas da web interativas e responsivas, tornando a experiência do usuário cativante e envolvente. Então, da próxima vez que você desenvolver um site ou aplicativo, lembre-se da magia dos eventos DOM e como eles podem transformar sua criação em algo verdadeiramente extraordinário!
 
-## **🚀 Agredimentos**
+## **Agredimentos**
 
 Espero que você tenha curtido e aprendido coisas legais. O JavaScript é incrivel, nos permite deixar nossas páginas web super interativas e dinâmicas!
 
